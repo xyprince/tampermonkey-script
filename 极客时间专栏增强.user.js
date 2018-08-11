@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name         极客时间专栏增强
-// @namespace    https://github.com/xyprince/tampermonkey-script/raw/master/%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4%E4%B8%93%E6%A0%8F%E5%A2%9E%E5%BC%BA.user.js
-// @version      0.2
-// @description 极客时间 专栏 文章 放大 清除复制限制
+// @namespace    https://github.com/xyprince/tampermonkey-script/
+// @updateURL    https://github.com/xyprince/tampermonkey-script/raw/master/%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4%E4%B8%93%E6%A0%8F%E5%A2%9E%E5%BC%BA.user.js
+// @downloadURL  https://github.com/xyprince/tampermonkey-script/raw/master/%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4%E4%B8%93%E6%A0%8F%E5%A2%9E%E5%BC%BA.user.js
+// @version      0.3
+// @description  极客时间 专栏 文章 放大 清除复制限制
 // @author       xyprince
 // @match        https://time.geekbang.org/column/*
 // @grant        none
