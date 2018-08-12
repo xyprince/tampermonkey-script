@@ -3,10 +3,12 @@
 // @namespace    https://github.com/xyprince/tampermonkey-script/
 // @updateURL    https://github.com/xyprince/tampermonkey-script/raw/master/%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4%E4%B8%93%E6%A0%8F%E5%A2%9E%E5%BC%BA.user.js
 // @downloadURL  https://github.com/xyprince/tampermonkey-script/raw/master/%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4%E4%B8%93%E6%A0%8F%E5%A2%9E%E5%BC%BA.user.js
-// @version      0.4
+// @version      0.5
 // @description  极客时间 专栏 文章 放大 清除复制限制
 // @author       xyprince
-// @match        https://time.geekbang.org/column/*
+// @include      https://time.geekbang.org/column/*
+// @include      https://time.geekbang.org/column/article/*
+// @exclude      https://time.geekbang.org/column/intro/*
 // @grant        none
 // ==/UserScript==
 
@@ -15,10 +17,10 @@
 
     console.log('Enhancer By Tampermonkey');
 
-    // 隐藏封面
+    // 隐藏大图
     let style = document.createElement('style');
     style.type = 'text/css';
-    style.innerHTML = '.article-content > img {display: none}';
+    style.innerHTML = '.article-content > img {display: none} body .article-item-cover {display: none}';
     document.head.appendChild(style);
 
     let observer = new MutationObserver(args => {
