@@ -1,3 +1,3 @@
 # tampermonkey-script
 
-* 极客时间专栏增强
+* geek-time : remove cover & banner, increase reading area
